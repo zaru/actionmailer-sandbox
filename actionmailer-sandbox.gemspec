@@ -5,7 +5,7 @@ require 'actionmailer/sandbox/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "actionmailer-sandbox"
-  spec.version       = Actionmailer::Sandbox::VERSION
+  spec.version       = ActionMailer::Sandbox::VERSION
   spec.authors       = ["zaru"]
   spec.email         = ["zarutofu@gmail.com"]
 
