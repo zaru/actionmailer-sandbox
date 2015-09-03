@@ -1,8 +1,6 @@
 # Actionmailer::Sandbox
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/actionmailer/sandbox`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This Gem is forced to change the e-mail destination ActionMailer.
 
 ## Installation
 
@@ -22,7 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+It will add to Rails.root/initializers/actionmailer_sandbox.rb ( default `sandbox_email` is test@example.com )
+
+```
+ActionMailer::Sandbox.configure do |config|
+    config.sandbox_email = 'your-name@example.com'
+end
+```
 
 ## Development
 
