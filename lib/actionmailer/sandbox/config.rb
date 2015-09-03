@@ -16,7 +16,7 @@ module ActionMailer
     end
 
     configure do |config|
-      config.sandbox_email = "test@example.com"
+      config.sandbox_email = nil
     end
   end
 end
