@@ -20,11 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-It will add to Rails.root/initializers/actionmailer_sandbox.rb ( default `sandbox_email` is test@example.com )
+It will add to Rails.root/initializers/actionmailer_sandbox.rb ( default `sandbox_email` is nil )
 
 ```
 ActionMailer::Sandbox.configure do |config|
+  if Rails.env.development?
     config.sandbox_email = 'your-name@example.com'
+  end
 end
 ```
 
